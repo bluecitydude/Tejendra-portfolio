@@ -1,4 +1,4 @@
-
+/* 
 .video{
     width:80%;
     height:20%;
@@ -20,7 +20,7 @@ border:3px solid rgba(81, 49, 10, 1);
 
 .ab-video{
     position: relative;
-    z-index:2;
+    z-index:3;
 }
 body{
     background-color:#467C87 ;
@@ -32,21 +32,16 @@ body{
     width:100%;
     border-radius:20%;
     transition: 0.3s;
-
-}
-.ab-topofvideo{
     position:relative;
     z-index: 2;
 }
 
+
 .ab-text-top{
     position: relative;
-    z-index:100;
+    z-index:0;
 }
-.ab-img:hover{
-    transform: scale(1.1);
 
-}
 .ab-txt{
     color:#ffffff;
 }
@@ -68,4 +63,150 @@ body{
 }
 .t-l p{
     font-size:larger;
+} */
+
+/* -------------------
+   Base Styles
+-------------------- */
+
+body {
+  background-color: #467C87;
+  margin:0 auto;
+}
+
+/* Video Section */
+.video {
+  width: 80%;
+  height: auto; /* auto height to keep aspect ratio */
+  margin: 1% 10%;
+  padding: 1%;
+  border: 10px solid rgba(81, 49, 10, 1);
+  border-radius: 10%;
+  background-color: silver;
+  float: left;
+  transition: 0.3s;
+}
+.video:hover {
+  border: 3px solid rgba(81, 49, 10, 1);
+}
+
+/* About Section Elements */
+.ab-video {
+  position: relative;
+  z-index: 3;
+}
+
+.ab-img {
+  float: left;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.ab-text-top {
+  position: relative;
+  z-index: 0;
+}
+
+.ab-txt {
+  color: #ffffff;
+}
+.ab-txt h2 {
+  text-decoration: underline;
+}
+
+/* Text Alignment */
+.t-l {
+  text-align: left;
+}
+.t-r {
+  text-align: right;
+}
+
+.t-r p,
+.t-l p {
+  font-size: larger;
+}
+
+/* -------------------
+   RESPONSIVE PART
+-------------------- */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .video {
+    width: 90%;
+    margin-left: 5%;
+    border-width: 8px;
+  }
+  
+body{padding-top:60%;}
+  .ab-img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .t-l p,
+  .t-r p {
+    font-size: large;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 900px) {
+  .video {
+    width: 95%;
+    margin: 10px auto;
+    float: none;
+    display: block;
+    border-width: 6px;
+  }
+
+  .ab-img {
+    width: 100%;
+    height: auto;
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .ab-txt {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .t-l,
+  .t-r {
+    text-align: center;
+  }
+
+  .t-l p,
+  .t-r p {
+    font-size: medium;
+    
+  }
+  body{padding-top:50%;}
+}
+@media(max-width:400px){
+    body{
+        padding-top:40%;
+    }
+}
+
+@media(max-width:500px){
+    body{
+        padding-top:40%;
+    }
+}
+@media((max-width:600px) and (min-width)){
+    body{
+        padding-top:40%;
+    }
 }
