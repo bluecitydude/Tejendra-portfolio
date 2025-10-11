@@ -1,0 +1,8 @@
+.card a{
+    text-decoration: none;
+    color:black;
+}
+
+.border{
+    border: 1px solid black;
+}

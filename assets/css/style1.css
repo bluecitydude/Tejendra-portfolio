@@ -69,7 +69,6 @@ li {
   float: right;
   border: 2px rgb(242, 238, 238) solid;
   border-radius: 50%;
-  transition: transform 0.3s;
 }
 
 
