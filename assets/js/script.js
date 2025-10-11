@@ -27,6 +27,10 @@ function small(str){
         const cont=document.getElementById('nav4');
     cont.setAttribute('style',"transform:scale(0.9);transition:0.3s;");
   }
+    else if(str=='nav5'){
+        const cont=document.getElementById('nav5');
+    cont.setAttribute('style',"transform:scale(0.9);transition:0.3s;");
+  }
 }
 
 function normal(str){
@@ -47,6 +51,10 @@ function normal(str){
   }
   else if(str=='nav4'){
         const cont=document.getElementById('nav4');
+    cont.setAttribute('style',"transform:scale(1.0);transition:0.3s;");
+  }
+      else if(str=='nav5'){
+        const cont=document.getElementById('nav5');
     cont.setAttribute('style',"transform:scale(1.0);transition:0.3s;");
   }
 }
@@ -71,4 +79,8 @@ function expand(str){
     const cont=document.getElementById('nav4');
     cont.setAttribute('style',"transform:scale(1.1);transition:0.3s;");
   }
+  else if(str=='nav5'){
+    const cont=document.getElementById('nav5');
+    cont.setAttribute('style',"transform:scale(1.1);transition:0.3s;");
+}
 }
