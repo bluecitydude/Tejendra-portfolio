@@ -141,7 +141,7 @@ body{margin:0 auto;
 }
 
 /* Mobile devices */
-@media (max-width: 600px) {
+@media ((max-width: 600px) and (min-width:300px)) {
   .img-nav {
     width: 35%;
     float: none;
@@ -149,7 +149,7 @@ body{margin:0 auto;
     margin: 10px auto;
   }
 body{margin:0 auto;
-    padding-top: 60%;
+    padding-top: 80%;
 }
   .links {
     float: none;
@@ -194,3 +194,7 @@ body{margin:0 auto;
   }
 }
 
+abbr{
+  border:none;
+  text-decoration: none;
+}
