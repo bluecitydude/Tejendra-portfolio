@@ -1,56 +1,36 @@
-                <nav class="navbar navbar-expand-sm nv-bg" id="nav" >
-                    <div class="row">
-                        <!-- namelogo -->
-                        <div class="col-3 col-sm-3 ">
-                            <a href="index.html">
-                                <img src="assets/images/Tej_logo.png" class="img-nav" >
-                            </a>
-                        </div>
-                        <!-- pages -->
-                        <div class="col-6 col-sm-6">
-                            <ul class="navbar-nav nav-content  ">
-                                <li class='nav-item' id="nav1" onmousedown="small('nav1')" onmouseup="normal('nav1')"
-                            onmouseover="expand('nav1')"
-                            onmouseout="normal('nav1')" onmousemove="expand('nav1')" >
-                                    <a href="index.html" class="nav-link nav-cont"><abbr title="View brief summary of Tejendra Purohit" style="text-decoration: none;">Home</abbr>  </a>
-                                </li>
-                
-                                <li class=' nav-item' id="nav2" onmousedown="small('nav2')" onmouseup="normal('nav2')"
-                            onmouseover="expand('nav2')"
-                            onmouseout="normal('nav2')" onmousemove="expand('nav2')">
-                                    <a href="about.html" class="nav-link nav-cont"><abbr title="View all the skills and experience of Tejendra Purohit" style="text-decoration: none;">About Me</abbr></a>
-                                </li>           
-                                <li class='nav-item' id="nav3" onmousedown="small('nav3')" onmouseup="normal('nav3')"
-                            onmouseover="expand('nav3')"
-                            onmouseout="normal('nav3')" onmousemove="expand('nav3')">
-                                    <a href="projects.html" class=" nav-link nav-cont"><abbr title="View real world project that was created by tejendra purohit" style="text-decoration: none;">Projects</abbr></a>
-                                </li>
-                                <li class='nav-item ' id="nav4" onmousedown="small('nav4')" onmouseup="normal('nav4')"
-                            onmouseover="expand('nav4')"
-                            onmouseout="normal('nav4')" onmousemove="expand('nav4')">
-                                    <a href="contact.html" class="nav-link nav-cont"><abbr title="Contact Detail to hire tejendra purohit" style="text-decoration: none;">Contact</abbr></a>
-                                </li>
-                                
-                                <li class='nav-item ' id="nav5" onmousedown="small('nav5')" onmouseup="normal('nav5')"
-                            onmouseover="expand('nav5')"
-                            onmouseout="normal('nav5')" onmousemove="expand('nav5')">
-                                    <a href="resume.html" class="nav-link nav-cont"><abbr title="Resume(s) of  tejendra purohit" style="text-decoration: none;">Resumes</abbr></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- links -->
-                         <div class="col-3 col-sm-3">
-                            
-                            <a target="_blank" href="https://www.linkedin.com/in/tejendra-purohit-14b753311/">
-                                <img class="img-nav links" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"  >
-                            </a>
-                            <a target="_blank" href="https://github.com/bluecitydude">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdZlszhihSfJBfoXkpJtOvDk9p_sskS4rSQ&s" class="img-nav links" >
-                            </a>
-                            <a target="_blank" href="https://x.com/purohittejendra">
-                                <img class="img-nav links" src="https://img.freepik.com/free-vector/twitter-app-new-logo-x-black-background_1017-45425.jpg?semt=ais_hybrid&w=740&q=80" class="img-nav " >
-                            </a>
-                         </div>
-                    </div>
-                    </nav>
+<nav class="navbar navbar-expand-md navbar-dark nv-bg" id="nav">
+    <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/images/Tej_logo.png" data-dark="assets/images/Tej_logo.png" data-light="assets/images/Tej_logo-light.png" class="img-nav me-2 site-logo" alt="Tejendra logo" loading="lazy" />
+            <span class="fw-bold text-light">Tejendra</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                <li class="nav-item"><a class="nav-link nav-cont" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-cont" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link nav-cont" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link nav-cont" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link nav-cont" href="resume.html">Resumes</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2">
+                <a target="_blank" href="https://www.linkedin.com/in/tejendra-purohit-14b753311/">
+                    <img class="img-nav links" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn" loading="lazy">
+                </a>
+                <a target="_blank" href="https://github.com/bluecitydude">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="img-nav links" alt="GitHub" loading="lazy">
+                </a>
+                <a target="_blank" href="https://x.com/purohittejendra">
+                    <img class="img-nav links" src="https://img.freepik.com/free-vector/twitter-app-new-logo-x-black-background_1017-45425.jpg?semt=ais_hybrid&w=740&q=80" alt="X" loading="lazy">
+                </a>
+                <button id="themeToggle" class="btn btn-sm btn-outline-light theme-toggle ms-2" aria-label="Toggle theme" title="Toggle theme">
+                    <span id="themeIcon" class="icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

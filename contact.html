@@ -8,7 +8,9 @@
     <title>Tejendra Purohit Contact Information</title>
 <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style1.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
     <link href="assets/images/Tej_logo.png" rel='icon' type='image/x-icon'/>
 
 </head>
@@ -16,27 +18,32 @@
     <!-- navbar starts -->
     <div id="navbar" ></div>
     <!-- navbar ends -->
-    <div class="container-fluid">
-        <dl>
-            <dt>Email</dt>
-            <dd><a href="mailto:tejendrapurohit555@gmail.com">Tejendra Purohit</a></dd>
-           
-            <dt>Linkedin:</dt>
-            <dd><a target="_blank" href="https://www.linkedin.com/in/tejendra-purohit-14b753311/" >Linkedin Profile</a></dd>
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="card p-4 shadow-sm">
+                    <h2 class="mb-3">Contact</h2>
+                    <dl class="row">
+                        <dt class="col-4">Email</dt>
+                        <dd class="col-8"><a href="mailto:tejendrapurohit555@gmail.com">tejendrapurohit555@gmail.com</a></dd>
 
-            <dt>Github</dt>
-            <dd><a href="https://github.com/bluecitydude" target="_blank">Github Profile</a></dd>
-        </dl>
+                        <dt class="col-4">LinkedIn</dt>
+                        <dd class="col-8"><a target="_blank" href="https://www.linkedin.com/in/tejendra-purohit-14b753311/">LinkedIn Profile</a></dd>
 
-        <p>That's all folks</p>
-
-    </div>
+                        <dt class="col-4">GitHub</dt>
+                        <dd class="col-8"><a target="_blank" href="https://github.com/bluecitydude">Github Profile</a></dd>
+                    </dl>
+                    <p class="text-muted mb-0">Thanks for visiting — feel free to reach out for collaborations or hiring.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 <script src="assets/js/script.js"></script>             
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
 </script>
 </body>
 

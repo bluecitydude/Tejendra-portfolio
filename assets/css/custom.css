@@ -1,0 +1,130 @@
+/* Custom overrides and small utilities */
+:root {
+    --glass-bg: rgba(8,8,8,0.6);
+}
+
+/* Navbar tweaks */
+.nv-bg {
+    background: linear-gradient(180deg, rgba(10,10,10,0.85), rgba(10,10,10,0.75));
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.img-nav {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-cont {
+    color: var(--text-light) !important;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+}
+
+.nav-cont:hover {
+    color: var(--accent-color) !important;
+}
+
+.links {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    opacity: 0.95;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.links:hover { transform: translateY(-3px) scale(1.05); opacity: 1; }
+
+/* Hero tweaks */
+.hero-section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.hero-section .display-4 { font-family: 'Poppins', system-ui, sans-serif; font-weight:700; }
+.big-para a { color: var(--primary-light); text-decoration: underline; }
+
+/* Footer */
+.footer { background: transparent; padding: 2rem 0; }
+.footer-textinfo { color: var(--text-muted); }
+
+@media (max-width: 767px) {
+  .hero-section { padding-top: 2rem; padding-bottom: 2rem; }
+  .img-cover { max-width: 160px; margin: 0 auto; display:block; }
+  .navbar .container { padding-left: 0.5rem; padding-right: 0.5rem; }
+}
+
+/* small utility to improve contrast on mobile toggler */
+.navbar-toggler { border-color: rgba(255,255,255,0.08); }
+
+/* Primary button tweak to match theme */
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+    border-color: rgba(255,255,255,0.06);
+    box-shadow: 0 6px 18px rgba(13,110,253,0.12);
+}
+.btn-primary:hover {
+    background: linear-gradient(90deg, var(--primary-light), var(--primary-dark));
+}
+
+/* Accessible focus outlines */
+.btn:focus, .navbar-toggler:focus, a:focus {
+    outline: 3px solid rgba(13,110,253,0.18);
+    outline-offset: 2px;
+}
+
+/* ===== Theme: Light Overrides ===== */
+html[data-theme="light"] {
+    --primary-color: #0d6efd;
+    --primary-light: #1f7fe0;
+    --accent-color: #0b5e6a;
+    --text-light: #0f1724; /* dark text on light bg */
+    --text-muted: #4b5563;
+    --bg-dark: #ffffff;
+    --bg-darker: #f6f7f9;
+    --bg-card: #ffffff;
+    --border-color: #e6e6e9;
+    --shadow-sm: 0 2px 6px rgba(16,24,40,0.06);
+    --shadow-md: 0 6px 18px rgba(16,24,40,0.08);
+    --shadow-lg: 0 10px 30px rgba(2,6,23,0.06);
+}
+
+/* Theme toggle specific */
+.theme-toggle { padding: 0.25rem 0.5rem; font-size: 0.9rem; }
+.theme-toggle .icon { pointer-events: none; }
+
+/* Smooth theme transition helper - added/removed by JS during toggle */
+html.theme-transition, html.theme-transition body, html.theme-transition .card, html.theme-transition .navbar, html.theme-transition .btn, html.theme-transition .site-logo {
+    transition: background-color 0.36s ease, color 0.36s ease, border-color 0.36s ease, box-shadow 0.36s ease, filter 0.36s ease;
+}
+
+/* Logo fallback styling if no light variant found */
+.site-logo.logo-filter-light {
+    filter: invert(1) contrast(90%);
+}
+
+/* Navbar theme adjustments */
+.nv-bg {
+    /* slightly translucent dark background by default */
+    background: linear-gradient(180deg, rgba(8,10,12,0.9), rgba(8,10,12,0.85));
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Ensure nav link colors follow theme variables */
+.nv-bg .nav-link, .nv-bg .navbar-brand, .nv-bg .nav-cont {
+    color: var(--text-light) !important;
+}
+
+/* Light-theme navbar (overrides when html[data-theme="light"]) */
+html[data-theme="light"] .nv-bg {
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(246,247,249,0.98));
+    border-bottom: 1px solid var(--border-color);
+}
+
+html[data-theme="light"] .nv-bg .nav-link,
+html[data-theme="light"] .nv-bg .navbar-brand,
+html[data-theme="light"] .nv-bg .nav-cont {
+    color: var(--text-light) !important; /* --text-light is dark in light theme */
+}
+
+/* Toggler icon contrast: ensure visibility on both themes */
+.navbar-toggler-icon { filter: brightness(1.2) contrast(1); }
+

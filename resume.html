@@ -9,8 +9,9 @@
     
     <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style1.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style3.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
     <link href="assets/images/Tej_logo.png" rel='icon' type='image/x-icon'/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -18,42 +19,42 @@
  <!-- navbar starts -->
     <div id="navbar" ></div>
     <!-- navbar ends -->
-<div class="container-fluid">
+<div class="container py-5">
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
-          <div class="card border">
-                <a href="assets/Resumes/Tejendra_Web_Dev_Resume.pdf" target="_blank">
-              <img src="assets/Resumes/Tejendra_Web_Dev_Resume_thumbnail.png" class="card-img-top border" alt="Resume of Tejendra Purohit, for web development">
-              <div class="card-body border ">
-                <h5 class="card-title">Resume for Web Development</h5>
-                <p class="card-text">This resume provides brief summary of skills required for web development, and experience</p>
-              </div>
+        <a href="assets/Resumes/Tejendra_Web_Dev_Resume.pdf" target="_blank" class="text-decoration-none">
+          <div class="card h-100 border shadow-sm">
+            <img src="assets/Resumes/Tejendra_Web_Dev_Resume_thumbnail.png" class="card-img-top" alt="Resume of Tejendra Purohit, for web development" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Resume for Web Development</h5>
+              <p class="card-text text-muted">This resume provides brief summary of skills required for web development, and experience</p>
             </div>
+          </div>
         </a>
       </div>
+
       <div class="col">
-        <div class="card border">
-            <a href="assets/Resumes/Tejendra_Software_Dev_Resume.pdf" target="_blank">
-
-                <img src="assets/Resumes/Tejendra_Software_Dev_Resume_thumbnail.png" class="card-img-top border" alt="Resume of Tejendra Purohit, for software development">
-                <div class="card-body border">
-                  <h5 class="card-title">Resume for Software Development</h5>
-                  <p class="card-text ">This Resume describes my skills and experience in Software development, and the knowledge i possess in this field</p>
-            </a>
+        <a href="assets/Resumes/Tejendra_Software_Dev_Resume.pdf" target="_blank" class="text-decoration-none">
+          <div class="card h-100 border shadow-sm">
+                <img src="assets/Resumes/Tejendra_Software_Dev_Resume_thumbnail.png" class="card-img-top" alt="Resume of Tejendra Purohit, for software development" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Resume for Software Development</h5>
+              <p class="card-text text-muted">This resume describes my skills and experience in software development and related knowledge.</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="col m-auto" style="width:80%;">
-        <div class="card border">
-            <a href="assets/Resumes/Tejendra_Machine_Learning_Resume.pdf" target="_blank">
 
-                <img src="assets/Resumes/Tejendra_Machine_Learning_Resume_thumbnail.png" class="card-img-top border" alt="Resume of Tejendra Purohit, for machine learning">
-                <div class="card-body border">
-                  <h5 class="card-title">Resume for Machine Learning</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </a>
+      <div class="col">
+        <a href="assets/Resumes/Tejendra_Machine_Learning_Resume.pdf" target="_blank" class="text-decoration-none">
+          <div class="card h-100 border shadow-sm">
+            <img src="assets/Resumes/Tejendra_Machine_Learning_Resume_thumbnail.png" class="card-img-top" alt="Resume of Tejendra Purohit, for machine learning" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Resume for Machine Learning</h5>
+              <p class="card-text text-muted">A concise resume focused on machine learning projects and coursework.</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -64,7 +65,7 @@
 <script src="assets/js/script.js"></script>             
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
 </script>
 </body>
 </html>

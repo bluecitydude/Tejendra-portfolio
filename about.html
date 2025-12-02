@@ -9,8 +9,10 @@
     
     <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style2.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style1.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
     <link href="assets/images/Tej_logo.ico" rel='icon' type='image/x-icon'/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -22,17 +24,22 @@
     <div class="container-fluid"> 
         <div id="tej"></div> 
 
-        <div class="row" >
-            <video  class="ab-video video" controls >
-                <source src="assets/images/tej_demo.mp4"  type="video/MP4">
-            </video>
-
-        </div>
-        <div data-aos="fade-up"   class="row ab-topofvideo">
-            <div   class="col-6 ">
-                <img class="ab-img" src="https://avatars.githubusercontent.com/u/167332577?v=4"    loading="lazy"/>
+        <div class="row">
+            <div class="col-12">
+                <div class="ratio ratio-16x9">
+                    <video class="w-100" controls>
+                        <source src="assets/images/tej_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <div  class="col-6 ab-text-top">
+        </div>
+
+        <div data-aos="fade-up" class="row ab-topofvideo">
+            <div class="col-12 col-md-6">
+                <img class="ab-img img-cover rounded-circle" src="https://avatars.githubusercontent.com/u/167332577?v=4" alt="Tejendra Purohit" loading="lazy"/>
+            </div>
+            <div class="col-12 col-md-6 ab-text-top">
                 <div data-aos="fade-down-right" data-aos-duration="1500"><h2 class="t-l" id="qualify">About me</h2></div>
                 <div translate="yes" class="t-l">
                 
@@ -82,16 +89,17 @@
                     </div>
                 </div>
             </div>
-        </div>       
+        </div>
      </div>
      <div id="footer"></div>
 
 <script src="assets/js/script.js"></script> 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
- 
+    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
 </script>
 </body>
-
+</html>
+</script>
+</body>
 </html>
