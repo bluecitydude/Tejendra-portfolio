@@ -10,6 +10,6 @@
 - **Styles:**: `assets/css/` (contains `bootstrap.min.css`, `style.css`, `custom.css`, etc.)
 - **Scripts:**: `assets/js/script.js`
 - **Images:**: `assets/images/`
-- **Projects:**: `projects/` (example: `projects/counter/counter.html`)
+- **Projects:**: `projects/` (example: Links of projects hosted on netlify)
 - **Resumes:**: `Resumes/` (resume files)
 
