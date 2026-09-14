@@ -1,65 +1,716 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="Tejendra Purohit Portfolio home page"/>
-    <meta name="description" content="Welcome to Tejendra Purohit personal portfolio website, where every info of tejendra exists"/>
-    <title>Tejendra Purohit Personal Portfolio Website</title>
-
-    
-
-    <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="assets/images/Tej_logo.png" rel='icon' type='image/x-icon'/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-</head>
-<body class="center-cover"  >
-    <!-- navbar starts -->
-    <div id="navbar" ></div>
-    <!-- navbar ends -->
-    <div class="container-fluid " data-aos="flip-right" data-aos-duration="1500">
-            <!-- basic intro(cover page ) starts-->
-            <article class="container hero-section pt-5 pb-5">
-                <section class="row">
-                    <div class="col-6 col-sm-6">
-                        <h2 class="text-light text-center display-4">
-                            Hi, <br>I'm Tejendra Purohit
-                        </h2>
-                        <p class='big-para'>
-                            Welcome to my portfolio website, in this website, you'll get to know about <a href="about.html#tej">me</a>, my <a href="projects.html"> projects </a>, my work <a href="about.html#experience">experience</a>, my <a href="about.html#qualify"> qualifications</a>, my <a href="about.html#skills"> skills</a> and many <a href="about.html#myself">personal</a> thingsa
-                        </p>
-                        <p class="big-para">
-                            Also, you can <a href="contact.html"> Contact</a> me and check out all of my <a href="resume.html">Resume(s)</a>
-                        </p>
-                    </div>
-                    <div class="col-6 col-sm-6">
-                            <img src="https://avatars.githubusercontent.com/u/167332577?v=4" alt="Tejendra Purohit's image" class="img-cover" loading="lazy"  id="cont" />
-                    </div>
-                </section>
-            </article>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
+  <!-- SEO Primary Meta Tags -->
+  <title>Tejendra Purohit — Full-Stack Developer | Backend-Focused Software Developer</title>
+  <meta name="title" content="Tejendra Purohit — Full-Stack Developer | Backend-Focused Software Developer" />
+  <meta name="description" content="Portfolio of Tejendra Purohit, a Full-Stack Developer with stronger backend engineering skills based in Jodhpur, India. Specializing in PHP, MySQL, REST APIs, and zero-storage cryptography." />
+  <meta name="keywords" content="Tejendra Purohit, Full-Stack Developer, Backend Developer, Software Developer Jodhpur, PHP Developer, MySQL, REST API, OpenSSL, Web Development, India" />
+  <meta name="author" content="Tejendra Purohit" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bluecitydude.github.io/Tejendra-portfolio/" />
+  <meta name="theme-color" content="#0b0f17" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bluecitydude.github.io/Tejendra-portfolio/" />
+  <meta property="og:title" content="Tejendra Purohit — Full-Stack Developer | Backend-Focused Software Developer" />
+  <meta property="og:description" content="Building practical web applications with strong backend foundations, clean REST APIs, and robust architectures." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/167332577?v=4" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://bluecitydude.github.io/Tejendra-portfolio/" />
+  <meta property="twitter:title" content="Tejendra Purohit — Full-Stack Developer" />
+  <meta property="twitter:description" content="Full-Stack Developer with strong backend foundations in PHP, MySQL, REST APIs, and Web Security." />
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/167332577?v=4" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/Tej_logo.ico" />
+  <link rel="icon" type="image/png" href="assets/images/Tej_logo.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- JSON-LD Structured Data for Google Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://bluecitydude.github.io/Tejendra-portfolio/#person",
+        "name": "Tejendra Purohit",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://bluecitydude.github.io/Tejendra-portfolio/",
+        "image": "https://avatars.githubusercontent.com/u/167332577?v=4",
+        "sameAs": [
+          "https://github.com/bluecitydude",
+          "https://www.linkedin.com/in/tejendra-purohit-14b753311/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jodhpur",
+          "addressRegion": "Rajasthan",
+          "addressCountry": "India"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Jai Narain Vyas University (JNVU)"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bluecitydude.github.io/Tejendra-portfolio/#website",
+        "url": "https://bluecitydude.github.io/Tejendra-portfolio/",
+        "name": "Tejendra Purohit Portfolio",
+        "publisher": {
+          "@id": "https://bluecitydude.github.io/Tejendra-portfolio/#person"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Global Header -->
+  <header class="site-header" role="banner">
+    <div class="site-container">
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="site-brand" aria-label="Tejendra Purohit Homepage">
+          <span class="brand-monogram">TP</span>
+          <div class="brand-meta">
+            <span class="brand-name">Tejendra Purohit</span>
+            <span class="brand-role">Full-Stack Developer</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-desktop-links" role="list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Action Tools: Command Palette, Resume, Theme Toggle, Mobile Menu -->
+        <div class="nav-actions">
+          <button type="button" class="cmd-k-btn" aria-label="Open Command Palette">
+            <span>Search</span>
+            <span class="cmd-k-kbd">Ctrl K</span>
+          </button>
+
+          <a href="resume.html" class="btn btn-secondary btn-sm" aria-label="Download Resume Page">
+            Resume
+          </a>
+
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+            <!-- Icon populated by app.js -->
+          </button>
+
+          <button type="button" class="mobile-nav-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </nav>
     </div>
-    <div id="footer"></div>  
-<script src="assets/js/script.js"></script>             
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </header>
 
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavDrawer" class="cmd-palette-backdrop" style="align-items:flex-start; padding-top:4.5rem;" aria-hidden="true">
+    <div class="cmd-palette-modal" style="max-width:340px; margin:0 auto; padding:1.25rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border-subtle);">
+        <span style="font-weight:700;">Navigation</span>
+        <span class="badge">Menu</span>
+      </div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+        <li><a href="index.html" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">Home</a></li>
+        <li><a href="projects.html" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">Projects &amp; Case Studies</a></li>
+        <li><a href="#skills" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">Engineering Skills</a></li>
+        <li><a href="#experience" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">Experience</a></li>
+        <li><a href="about.html" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">About Me</a></li>
+        <li><a href="resume.html" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">Resume Selection</a></li>
+        <li><a href="#contact" class="btn btn-ghost btn-sm" style="width:100%; justify-content:flex-start;">Contact</a></li>
+      </ul>
+      <div style="margin-top:1.25rem; pt:1rem; border-top:1px solid var(--border-subtle); display:flex; gap:0.5rem;">
+        <a href="https://github.com/bluecitydude" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex:1;">GitHub &nearr;</a>
+        <a href="https://www.linkedin.com/in/tejendra-purohit-14b753311/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex:1;">LinkedIn &nearr;</a>
+      </div>
+    </div>
+  </div>
 
-<script defer>
-document.body.appendChild(document.createElement('div')).setAttribute('id','chatBubbleRoot');
-window.agx = '692e907983acbaaea3485c8bB1zai9LsAWbXRi0rlOkAXw==|ukygrt0dszmW4aZ78ISSd5czVlI2i8IAzJhZabhMotE=';
-</script>
-<script defer src="https://storage.googleapis.com/agentx-cdn-01/agentx-chat.js"></script>
+  <main id="mainContent">
 
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="site-container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge-container">
+              <span class="status-pill">
+                <span class="status-dot"></span>
+                Available for Software Engineering Roles
+              </span>
+              <span class="location-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Jodhpur, Rajasthan &bull; India
+              </span>
+            </div>
 
+            <h1 id="hero-title" class="hero-title">
+              Hi, I'm <span class="name-highlight">Tejendra</span>.<br />
+              I build software that solves problems.
+            </h1>
+
+            <p class="hero-subtitle">
+              Full-Stack Developer with stronger backend engineering skills.
+            </p>
+
+            <p class="hero-bio">
+              I specialize in architecting practical web applications backed by solid engineering: REST APIs, relational database design, custom authentication middleware, and zero-storage cryptography.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#featured" class="btn btn-primary btn-lg">
+                Explore Work
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="resume.html" class="btn btn-secondary btn-lg">
+                View Resumes
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </a>
+              <a href="https://github.com/bluecitydude" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub
+              </a>
+            </div>
+
+            <!-- Quick Engineering Facts -->
+            <div class="hero-quick-facts">
+              <div class="fact-item">
+                <span class="fact-number">BCA Graduate</span>
+                <span class="fact-label">JNVU Jodhpur (2023–2026)</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-number">Backend Intern</span>
+                <span class="fact-label">Siddhi Software Company</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-number">0-Storage Crypto</span>
+                <span class="fact-label">OpenSSL Headless Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Portrait Frame -->
+          <div class="hero-portrait-wrapper">
+            <div class="portrait-frame">
+              <img src="https://avatars.githubusercontent.com/u/167332577?v=4" alt="Portrait photo of Tejendra Purohit" class="portrait-image" width="360" height="430" loading="eager" />
+              <div class="portrait-tag">
+                <div>
+                  <div class="portrait-tag-name">Tejendra Purohit</div>
+                  <div class="portrait-tag-role">Backend &amp; Full-Stack</div>
+                </div>
+                <span class="badge badge-accent">Verified</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK SECTION -->
+    <section id="featured" class="section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);" aria-labelledby="featured-heading">
+      <div class="site-container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">Featured Work</span>
+          <h2 id="featured-heading" class="section-title">Engineered with Purpose</h2>
+          <p class="section-desc">
+            Spotlight projects demonstrating end-to-end full-stack capabilities, stateless API design, session security, and clean separation of concerns.
+          </p>
+        </header>
+
+        <div class="featured-grid">
+
+          <!-- Featured Project 1: SecretLetter -->
+          <article class="featured-card">
+            <div class="featured-visual">
+              <img src="assets/images/projects/secretletter-preview.svg" alt="SecretLetter Architecture and Pipeline Preview" loading="lazy" />
+            </div>
+            <div class="featured-content">
+              <div class="project-meta-bar">
+                <span class="project-category-tag">Full-Stack &bull; Security &bull; Backend</span>
+                <span class="badge badge-accent">Featured Project</span>
+              </div>
+              <h3 class="featured-title">SecretLetter</h3>
+              <p class="featured-tagline">Stateless zero-storage cryptography platform with headless PHP API</p>
+              <p class="featured-desc">
+                Engineered a decoupled encryption platform where data privacy is mathematically guaranteed by zero server persistence. Uses multi-round OpenSSL ciphers, clean MVC controllers, and a decoupled static frontend.
+              </p>
+
+              <div class="metrics-row">
+                <div class="metric-box">
+                  <span class="metric-label">Persistence</span>
+                  <span class="metric-value">0 Bytes (Stateless)</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Cryptography</span>
+                  <span class="metric-value">OpenSSL Multi-Round</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Architecture</span>
+                  <span class="metric-value">Headless REST API</span>
+                </div>
+              </div>
+
+              <div class="tech-badges-list">
+                <span class="badge">PHP</span>
+                <span class="badge">OpenSSL</span>
+                <span class="badge">REST API</span>
+                <span class="badge">MVC</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Vercel Edge</span>
+              </div>
+
+              <div class="project-action-bar">
+                <a href="projects/secretletter.html" class="btn btn-primary btn-sm">Read Case Study &rarr;</a>
+                <a href="https://secretletter-livid.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Live Demo &nearr;</a>
+                <a href="https://github.com/bluecitydude/SecretLetter_FullCodeStructure" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 2: Elyra -->
+          <article class="featured-card">
+            <div class="featured-visual">
+              <img src="assets/images/projects/elyra-preview.svg" alt="Elyra Backend and Auth Middleware Architecture" loading="lazy" />
+            </div>
+            <div class="featured-content">
+              <div class="project-meta-bar">
+                <span class="project-category-tag">Full-Stack &bull; Backend &bull; Capstone</span>
+                <span class="badge badge-accent">Featured Project</span>
+              </div>
+              <h3 class="featured-title">Elyra</h3>
+              <p class="featured-tagline">Mental wellness web platform with custom PHP backend &amp; auth engine</p>
+              <p class="featured-desc">
+                BCA final-year project capstone where I served as backend lead. Designed the relational MySQL schemas, custom session authentication middleware (`auth.php` and `admin_auth.php`), and dynamic user dashboards.
+              </p>
+
+              <div class="metrics-row">
+                <div class="metric-box">
+                  <span class="metric-label">Role</span>
+                  <span class="metric-value">Backend Engineering Lead</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Database</span>
+                  <span class="metric-value">Relational MySQL</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Security</span>
+                  <span class="metric-value">Role-Based Middleware</span>
+                </div>
+              </div>
+
+              <div class="tech-badges-list">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Auth Middleware</span>
+                <span class="badge">MVC</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Session Security</span>
+              </div>
+
+              <div class="project-action-bar">
+                <a href="projects/elyra.html" class="btn btn-primary btn-sm">Read Case Study &rarr;</a>
+                <a href="http://elyra.ct.ws/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Live Demo &nearr;</a>
+                <a href="https://github.com/bluecitydude/Elyra-mental-health" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="projects.html" class="btn btn-secondary btn-lg">
+            View All Projects &amp; Interactive Filters &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EVIDENCE-BASED SKILLS SECTION -->
+    <section id="skills" class="section-spacing" aria-labelledby="skills-heading">
+      <div class="site-container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Engineering Skills</span>
+          <h2 id="skills-heading" class="section-title">Evidence-Based Stack</h2>
+          <p class="section-desc">
+            No meaningless percentage bars. Every skill listed below is backed by real implementations in public repositories and projects.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+
+          <!-- Backend & Architecture -->
+          <div class="skill-category-card">
+            <div class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              <span>Backend &amp; API</span>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>PHP (Native &amp; OOP)</span>
+                  <span class="skill-proof">SecretLetter &bull; Elyra</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>REST API Design</span>
+                  <span class="skill-proof">SecretLetter API</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>MVC Architecture</span>
+                  <span class="skill-proof">Elyra &bull; SecretLetter</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Authentication Middleware</span>
+                  <span class="skill-proof">Elyra (Session &amp; Admin)</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Input Sanitization &amp; JSON Handling</span>
+                  <span class="skill-proof">SecretLetter &bull; Job Assignment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card">
+            <div class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-indigo);"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              <span>Databases</span>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>MySQL</span>
+                  <span class="skill-proof">Elyra &bull; Siddhi Software</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Relational Schema Design</span>
+                  <span class="skill-proof">User &amp; Mood Logging</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Parameterized Queries &amp; SQL</span>
+                  <span class="skill-proof">SQL Injection Protection</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Stateless Architecture</span>
+                  <span class="skill-proof">SecretLetter (Zero-Disk)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security & Cryptography -->
+          <div class="skill-category-card">
+            <div class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-emerald);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>Security &amp; Cryptography</span>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>OpenSSL Module</span>
+                  <span class="skill-proof">SecretLetter</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Multi-Pass Encryption / Decryption</span>
+                  <span class="skill-proof">Symmetric Ciphers</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Session &amp; Cookie Security</span>
+                  <span class="skill-proof">Elyra Auth</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Cloud Security Case Studies</span>
+                  <span class="skill-proof">TejendraPresents</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend & Tooling -->
+          <div class="skill-category-card">
+            <div class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Frontend &amp; Tooling</span>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Modern JavaScript (ES6+)</span>
+                  <span class="skill-proof">Zen Master &bull; Countdown</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Semantic HTML5 &amp; Vanilla CSS3</span>
+                  <span class="skill-proof">This Portfolio &bull; Projects</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Git Version Control</span>
+                  <span class="skill-proof">14+ Public Repositories</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span>Linux Environment &amp; Hosting</span>
+                  <span class="skill-proof">Apache, Vercel, Netlify</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section-spacing" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);" aria-labelledby="exp-heading">
+      <div class="site-container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Career Timeline</span>
+          <h2 id="exp-heading" class="section-title">Professional Experience</h2>
+          <p class="section-desc">
+            Hands-on software development experience working on backend engineering workflows, database operations, and system maintenance.
+          </p>
+        </header>
+
+        <div class="experience-timeline">
+
+          <!-- Timeline Item: Siddhi Software Company -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Backend Developer Intern</h3>
+                <span class="timeline-period">December 2025 – March 2026</span>
+              </div>
+              <div class="timeline-company">Siddhi Software Company &bull; Remote</div>
+              
+              <ul class="timeline-responsibilities">
+                <li>Collaborated on backend service workflows, writing clean PHP API endpoints and handling request validation.</li>
+                <li>Worked on database interactions with MySQL, executing normalized queries and debugging relational issues.</li>
+                <li>Participated in architecture discussions on API response caching and scheduled backend jobs.</li>
+                <li>Analyzed application errors and assisted senior engineers in resolving performance bottlenecks and data validation edge cases.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT & EDUCATION SECTION -->
+    <section id="about" class="section-spacing" aria-labelledby="about-heading">
+      <div class="site-container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Background</span>
+          <h2 id="about-heading" class="section-title">About Tejendra</h2>
+        </header>
+
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem;">
+          
+          <div>
+            <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--text-primary);">
+              I'm a Full-Stack Developer based in Jodhpur, Rajasthan, India, with an active focus on backend engineering, system architecture, and API design.
+            </p>
+            <p style="margin-bottom: 1.25rem; line-height: 1.75;">
+              Rather than just copying trendy framework tutorials, I prefer understanding the underlying layer: how HTTP requests travel through routing middleware, how session cookies are validated, how cryptographic ciphers handle IV bytes, and how relational schemas maintain data integrity under load.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.75;">
+              I completed my Bachelor of Computer Applications (BCA) at Jai Narain Vyas University (JNVU), where I built practical projects like <a href="projects/elyra.html" style="color:var(--accent); text-decoration:underline;">Elyra</a> and <a href="projects/secretletter.html" style="color:var(--accent); text-decoration:underline;">SecretLetter</a>. I am passionate about writing clean, maintainable code that delivers genuine utility.
+            </p>
+
+            <a href="about.html" class="btn btn-secondary btn-sm">Read Detailed Bio &rarr;</a>
+          </div>
+
+          <!-- Education Card -->
+          <div style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent);"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Academic Background
+            </h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+                <div style="font-weight: 700; color: var(--text-primary);">Bachelor of Computer Applications (BCA)</div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary);">Jai Narain Vyas University (JNVU), Jodhpur</div>
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); margin-top: 0.25rem;">2023 – 2026 &bull; Completed</div>
+              </div>
+
+              <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+                <div style="font-weight: 700; color: var(--text-primary);">Senior Secondary (12th) — PCMB</div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary);">RBSE Board</div>
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-tertiary); margin-top: 0.25rem;">2023</div>
+              </div>
+
+              <div>
+                <div style="font-weight: 700; color: var(--text-primary);">Secondary (10th)</div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary);">RBSE Board</div>
+                <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-tertiary); margin-top: 0.25rem;">2021</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT CTA SECTION -->
+    <section id="contact" class="section-spacing" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-subtle);" aria-labelledby="contact-heading">
+      <div class="site-container">
+        
+        <div style="max-width: 750px; margin: 0 auto; text-align: center;">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Let's build something useful.</h2>
+          <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2rem;">
+            I am actively open to full-time software engineering and backend developer opportunities where I can contribute to reliable, scalable systems.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 2.5rem;">
+            <a href="mailto:tejendrapurohit555@gmail.com" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              tejendrapurohit555@gmail.com
+            </a>
+
+            <button type="button" class="btn btn-secondary btn-lg copy-email-trigger" data-email="tejendrapurohit555@gmail.com" aria-label="Copy Email to Clipboard">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Email
+            </button>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: center; gap: 2rem;">
+            <a href="https://github.com/bluecitydude" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-weight: 500;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/tejendra-purohit-14b753311/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-weight: 500;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+
+            <a href="resume.html" style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent); font-weight: 600;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Download Resume
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Minimalist Professional Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="font-weight: 700; font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.35rem;">
+            Tejendra Purohit
+          </div>
+          <div style="font-size: 0.88rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.75rem;">
+            Full-Stack Developer
+          </div>
+          <p style="font-size: 0.92rem; color: var(--text-tertiary); line-height: 1.6;">
+            Building robust web applications with strong backend foundations in Jodhpur, Rajasthan, India.
+          </p>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); margin-bottom: 1rem;">
+            Navigation
+          </div>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume Hub</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-primary); margin-bottom: 1rem;">
+            Connect
+          </div>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com/bluecitydude" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a></li>
+            <li><a href="https://www.linkedin.com/in/tejendra-purohit-14b753311/" target="_blank" rel="noopener noreferrer">LinkedIn &nearr;</a></li>
+            <li><a href="mailto:tejendrapurohit555@gmail.com">Email Directly &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Tejendra Purohit. All rights reserved.</div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem;">
+          Hosted statically on GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/projects-data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/command-palette.js"></script>
 </body>
-
 </html>

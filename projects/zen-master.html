@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen Master Case Study — Interactive Cognitive Assessment | Tejendra Purohit</title>
+  <meta name="description" content="Case study for Zen Master: An interactive web application testing user patience, reflexes, and cognitive perseverance through gamified timer trials." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bluecitydude.github.io/Tejendra-portfolio/projects/zen-master.html" />
+  <meta name="theme-color" content="#0b0f17" />
+
+  <meta property="og:title" content="Zen Master Case Study — Tejendra Purohit" />
+  <meta property="og:description" content="Interactive patience and focus assessment web application with real-time DOM evaluation." />
+  <meta property="og:image" content="../assets/images/projects/zen-master-preview.svg" />
+
+  <link rel="icon" type="image/x-icon" href="../assets/images/Tej_logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/design-system.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="site-container">
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="../index.html" class="site-brand">
+          <span class="brand-monogram">TP</span>
+          <div class="brand-meta">
+            <span class="brand-name">Tejendra Purohit</span>
+            <span class="brand-role">Full-Stack Developer</span>
+          </div>
+        </a>
+
+        <ul class="nav-desktop-links" role="list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button type="button" class="cmd-k-btn" aria-label="Open Command Palette">
+            <span>Search</span>
+            <span class="cmd-k-kbd">Ctrl K</span>
+          </button>
+          <a href="../resume.html" class="btn btn-secondary btn-sm">Resume</a>
+          <button type="button" class="theme-toggle-btn" aria-label="Toggle theme"></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent" class="section-spacing">
+    <div class="site-container" style="max-width: 880px;">
+
+      <nav style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-tertiary); margin-bottom: 2rem;">
+        <a href="../index.html" style="color: var(--text-secondary);">Home</a> / 
+        <a href="../projects.html" style="color: var(--text-secondary);">Projects</a> / 
+        <span style="color: var(--accent);">Zen Master</span>
+      </nav>
+
+      <header style="margin-bottom: 2.5rem;">
+        <span class="section-eyebrow">Web Application &bull; Interactive / Utility</span>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 1rem;">Zen Master</h1>
+        <p style="font-size: 1.25rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.75rem;">
+          An interactive patience and focus assessment web application evaluating delay-tolerance and impulse restraint.
+        </p>
+
+        <div class="tech-badges-list" style="margin-bottom: 2rem;">
+          <span class="badge badge-accent">Modern JavaScript</span>
+          <span class="badge">DOM Events</span>
+          <span class="badge">HTML5/CSS3</span>
+          <span class="badge">Bootstrap</span>
+          <span class="badge">Dark/Light Mode</span>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+          <a href="https://patience-test.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Take Assessment Live &nearr;
+          </a>
+          <a href="https://github.com/bluecitydude/Zen-master-challenge-How-patient-are-you-" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            View GitHub Repository &nearr;
+          </a>
+        </div>
+      </header>
+
+      <div style="margin-bottom: 3.5rem; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md);">
+        <img src="../assets/images/projects/zen-master-preview.svg" alt="Zen Master Assessment Preview" style="width: 100%; height: auto; display: block;" />
+      </div>
+
+      <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+          1. Overview &amp; Purpose
+        </h2>
+        <p style="line-height: 1.8; margin-bottom: 1rem;">
+          Zen Master challenges modern screen habits by turning patience into a gamified test. Users face deliberate waiting trials, deceptive prompts, and progressive cognitive friction designed to measure impulse resistance.
+        </p>
+      </section>
+
+      <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+          2. Technical Architecture
+        </h2>
+        <div class="architecture-container">
+          <div class="arch-flow-row">
+            <div class="arch-node">
+              <div class="arch-node-title">1. Trial Initialization</div>
+              <div class="arch-node-desc">User launches assessment trial</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-node" style="border-color: var(--accent);">
+              <div class="arch-node-title" style="color:var(--accent);">2. Interval Machine</div>
+              <div class="arch-node-desc">High-precision timer &amp; click listener triggers</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-node">
+              <div class="arch-node-title">3. Evaluation Metric</div>
+              <div class="arch-node-desc">Algorithm computes focus &amp; restraint score</div>
+            </div>
+            <div class="arch-arrow">&rarr;</div>
+            <div class="arch-node" style="border-color: var(--accent-emerald);">
+              <div class="arch-node-title" style="color:var(--accent-emerald);">4. Dynamic Feedback</div>
+              <div class="arch-node-desc">DOM renders customized patience tips &amp; rank</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom: 3rem;">
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+          3. Reflections &amp; Learnings
+        </h2>
+        <p style="line-height: 1.8;">
+          Building Zen Master deepened my mastery of browser event loops, timer precision, and accessible state management without external reactive frameworks.
+        </p>
+      </section>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid var(--border-subtle);">
+        <a href="elyra.html" class="btn btn-secondary btn-sm">&larr; Elyra</a>
+        <a href="sporty-countdown.html" class="btn btn-primary btn-sm">Next: Sporty Countdown &rarr;</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <div>&copy; 2026 Tejendra Purohit</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="https://github.com/bluecitydude" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a>
+          <a href="https://www.linkedin.com/in/tejendra-purohit-14b753311/" target="_blank" rel="noopener noreferrer">LinkedIn &nearr;</a>
+          <a href="../resume.html">Resume Hub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/projects-data.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/command-palette.js"></script>
+</body>
+</html>

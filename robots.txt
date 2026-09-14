@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bluecitydude.github.io/Tejendra-portfolio/sitemap.xml

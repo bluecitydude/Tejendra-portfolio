@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="presBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#presBg)"/>
+  <rect x="40" y="40" width="720" height="400" rx="16" fill="#111c33" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1.5"/>
+  <circle cx="70" cy="70" r="6" fill="#ef4444"/>
+  <circle cx="90" cy="70" r="6" fill="#f59e0b"/>
+  <circle cx="110" cy="70" r="6" fill="#10b981"/>
+  <text x="140" y="75" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">tejendra-presents.vercel.app</text>
+  <line x1="40" y1="95" x2="760" y2="95" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  
+  <text x="70" y="145" fill="#38bdf8" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="700">CLOUD &amp; CYBERSECURITY ARCHITECTURE PORTAL</text>
+  <text x="70" y="180" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700">TejendraPresents — Technical Decks</text>
+  <text x="70" y="210" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14">Curated case study decks on Cloud Computing, Zero Trust security models, and threat analysis</text>
+  
+  <g transform="translate(100, 245)">
+    <rect x="0" y="0" width="280" height="90" rx="8" fill="#1e293b" stroke="rgba(56, 189, 248, 0.3)"/>
+    <text x="24" y="38" fill="#38bdf8" font-size="13" font-family="monospace">CLOUD COMPUTING</text>
+    <text x="24" y="65" fill="#f8fafc" font-size="15" font-weight="600">AWS &amp; Distributed Patterns</text>
+
+    <rect x="310" y="0" width="280" height="90" rx="8" fill="#1e293b" stroke="rgba(129, 140, 248, 0.3)"/>
+    <text x="334" y="38" fill="#818cf8" font-size="13" font-family="monospace">CYBERSECURITY</text>
+    <text x="334" y="65" fill="#f8fafc" font-size="15" font-weight="600">Zero-Trust &amp; Cryptography</text>
+  </g>
+</svg>
